@@ -1,0 +1,97 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <ImageView
+        android:id="@+id/imageViewFacebook"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_fb"
+        android:onClick="onFacebookClick"/>
+
+    <ImageView
+        android:id="@+id/imageViewLinkedIn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/imageViewFacebook"
+        android:src="@drawable/ic_linkedin"
+        android:onClick="onLinkedInClick"/>
+
+    <ImageView
+        android:id="@+id/imageViewInstagram"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/imageViewLinkedIn"
+        android:src="@drawable/ic_instagram"
+        android:onClick="onInstagramClick"/>
+
+    <ImageView
+        android:id="@+id/imageViewGoogle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/imageViewInstagram"
+        android:src="@drawable/ic_google"
+        android:onClick="onGoogleClick"/>
+
+    <ImageView
+        android:id="@+id/imageViewGitHub"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/imageViewGoogle"
+        android:src="@drawable/ic_github"
+        android:onClick="onGitHubClick"/>
+</RelativeLayout>
